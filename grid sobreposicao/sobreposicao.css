@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr); ;
+    grid-template-rows: 200px;
+    grid-template-columns: 200px;
+}
+
+.container div{
+    background-color: royalblue;
+    padding: 1rem;
+}
+.container div:nth-child(even){
+    background-color: skyblue;
+}
+.container div:nth-child(2) {
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
